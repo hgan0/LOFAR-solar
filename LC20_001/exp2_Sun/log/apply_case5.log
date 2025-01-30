@@ -1,0 +1,2270 @@
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB000_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB000/Sun_flare_SB000_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       7.84 real         3.1 user        0.27 system
+   16.7% ( 1309 ms) MsReader
+   82.9% ( 6497 ms) MSWriter msout.
+     50.6% ( 3287 ms) Creating task
+     61.3% ( 3982 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB000/Sun_flare_SB000_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB000//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB000/Sun_flare_SB000_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.685%   (82934 out of 709776 visibilities)
+
+Total DP3 time       2.09 real        1.88 user        0.09 system
+    8.8% (  183 ms) MsReader
+   15.9% (  332 ms) OneApplyCal applycal.
+   36.7% (  766 ms) ApplyBeam applybeam.
+   28.2% (  589 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB001_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB001/Sun_flare_SB001_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       8.03 real        3.14 user        0.33 system
+   17.2% ( 1377 ms) MsReader
+   82.5% ( 6623 ms) MSWriter msout.
+     49.4% ( 3269 ms) Creating task
+     60.1% ( 3981 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB001/Sun_flare_SB001_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB001//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB001/Sun_flare_SB001_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.754%   (83425 out of 709776 visibilities)
+
+Total DP3 time       2.06 real        1.84 user        0.12 system
+    9.0% (  185 ms) MsReader
+   16.5% (  341 ms) OneApplyCal applycal.
+   37.5% (  774 ms) ApplyBeam applybeam.
+   28.8% (  595 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB002_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB002/Sun_flare_SB002_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       7.76 real        3.09 user        0.27 system
+   16.9% ( 1309 ms) MsReader
+   82.7% ( 6416 ms) MSWriter msout.
+     49.3% ( 3164 ms) Creating task
+     60.2% ( 3860 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB002/Sun_flare_SB002_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB002//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB002/Sun_flare_SB002_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.616%   (82447 out of 709776 visibilities)
+
+Total DP3 time       2.11 real        1.88 user        0.11 system
+    8.8% (  185 ms) MsReader
+   16.6% (  350 ms) OneApplyCal applycal.
+   36.7% (  773 ms) ApplyBeam applybeam.
+   28.3% (  595 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB003_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB003/Sun_flare_SB003_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       7.81 real        2.96 user        0.29 system
+   16.0% ( 1246 ms) MsReader
+   83.7% ( 6535 ms) MSWriter msout.
+     52.7% ( 3441 ms) Creating task
+     62.8% ( 4106 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB003/Sun_flare_SB003_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB003//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB003/Sun_flare_SB003_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   1  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   2  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   3  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   4  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   5  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   6  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   7  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   8  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   9  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  10  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  11  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  12  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  13  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  14  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  15  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  16  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  17  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  18  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  19  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  20  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  21  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  22  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  25  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  26  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  27  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  28  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+TOTAL 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   1  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   2  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   3  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   4  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   5  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   6  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   7  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   8  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+   9  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  10  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  11  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  12  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  13  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  14  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  15  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  16  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  17  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  18  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  19  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  20  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  21  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  22  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  25  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  26  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  27  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  28  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+TOTAL 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+
+ ant   30
+   0  100%
+   1  100%
+   2  100%
+   3  100%
+   4  100%
+   5  100%
+   6  100%
+   7  100%
+   8  100%
+   9  100%
+  10  100%
+  11  100%
+  12  100%
+  13  100%
+  14  100%
+  15  100%
+  16  100%
+  17  100%
+  18  100%
+  19  100%
+  20  100%
+  21  100%
+  22  100%
+  23  100%
+  24  100%
+  25  100%
+  26  100%
+  27  100%
+  28  100%
+  29  100%
+  30  100%
+TOTAL 100%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      65%
+Total flagged:    64.505%   (457839 out of 709776 visibilities)
+
+Total DP3 time       2.19 real         1.8 user        0.16 system
+    8.5% (  185 ms) MsReader
+   15.8% (  345 ms) OneApplyCal applycal.
+   35.3% (  770 ms) ApplyBeam applybeam.
+   25.8% (  564 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB004_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB004/Sun_flare_SB004_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       8.49 real        3.17 user        0.26 system
+   15.8% ( 1338 ms) MsReader
+   83.9% ( 7118 ms) MSWriter msout.
+     43.8% ( 3120 ms) Creating task
+     53.9% ( 3838 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB004/Sun_flare_SB004_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB004//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB004/Sun_flare_SB004_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.723%   (83204 out of 709776 visibilities)
+
+Total DP3 time       2.31 real        1.87 user        0.11 system
+    8.0% (  185 ms) MsReader
+   15.2% (  351 ms) OneApplyCal applycal.
+   33.3% (  769 ms) ApplyBeam applybeam.
+   25.7% (  593 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB005_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB005/Sun_flare_SB005_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       8.08 real        3.14 user        0.27 system
+   16.3% ( 1320 ms) MsReader
+   83.3% ( 6729 ms) MSWriter msout.
+     49.5% ( 3331 ms) Creating task
+     60.3% ( 4055 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB005/Sun_flare_SB005_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB005//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB005/Sun_flare_SB005_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.767%   (83522 out of 709776 visibilities)
+
+Total DP3 time       2.11 real        1.83 user        0.14 system
+    8.8% (  185 ms) MsReader
+   16.4% (  347 ms) OneApplyCal applycal.
+   36.6% (  774 ms) ApplyBeam applybeam.
+   28.1% (  594 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB006_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB006/Sun_flare_SB006_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       8.28 real         2.9 user        0.34 system
+   15.3% ( 1265 ms) MsReader
+   84.4% ( 6989 ms) MSWriter msout.
+     48.0% ( 3353 ms) Creating task
+     57.3% ( 4003 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB006/Sun_flare_SB006_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB006//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB006/Sun_flare_SB006_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.629%   (82538 out of 709776 visibilities)
+
+Total DP3 time       2.18 real        1.92 user        0.08 system
+    8.6% (  187 ms) MsReader
+   16.0% (  348 ms) OneApplyCal applycal.
+   35.8% (  779 ms) ApplyBeam applybeam.
+   27.9% (  607 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB007_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB007/Sun_flare_SB007_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       7.83 real        2.87 user        0.27 system
+   15.9% ( 1248 ms) MsReader
+   83.7% ( 6557 ms) MSWriter msout.
+     51.7% ( 3388 ms) Creating task
+     61.3% ( 4020 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB007/Sun_flare_SB007_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB007//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB007/Sun_flare_SB007_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.648%   (82678 out of 709776 visibilities)
+
+Total DP3 time       2.11 real        1.92 user        0.06 system
+    8.9% (  186 ms) MsReader
+   16.1% (  340 ms) OneApplyCal applycal.
+   36.7% (  774 ms) ApplyBeam applybeam.
+   28.1% (  592 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB008_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB008/Sun_flare_SB008_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time        8.4 real           3 user        0.28 system
+   15.4% ( 1292 ms) MsReader
+   84.3% ( 7081 ms) MSWriter msout.
+     49.2% ( 3482 ms) Creating task
+     58.9% ( 4170 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB008/Sun_flare_SB008_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB008//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB008/Sun_flare_SB008_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.706%   (83086 out of 709776 visibilities)
+
+Total DP3 time       2.07 real        1.87 user         0.1 system
+    8.9% (  184 ms) MsReader
+   16.5% (  341 ms) OneApplyCal applycal.
+   37.2% (  771 ms) ApplyBeam applybeam.
+   28.7% (  594 ms) MSUpdater msout.
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB009_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB009/Sun_flare_SB009_Cycle0.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         1431
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       7.69 real        3.08 user        0.28 system
+   16.7% ( 1281 ms) MsReader
+   83.0% ( 6385 ms) MSWriter msout.
+     52.4% ( 3345 ms) Creating task
+     63.4% ( 4051 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB009/Sun_flare_SB009_Cycle0.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:52:00
+  ntimes:             1431
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+ApplyCal applycal.
+  Parmdb:         /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB009//Sun_cycle1.table
+  Correction:       diagonal complex
+    Ampl/Phase:   false
+  Update weights:   false
+  Invert:           true
+    SigmaMMSE:    0
+  TimeSlotsPerParmUpdate: 200
+ApplyBeam applybeam.
+  mode:              Full
+  use channelfreq:   true
+  direction:         []
+  invert:            true
+  update weights:    false
+  input data has no beam correction applied.
+MSUpdater msout.
+  MS:             /net/zernike/scratch3/hgan/processed/L2025886_exp2/case5/SB009/Sun_flare_SB009_Cycle0.MS
+  datacolumn:     CORRECTED_DATA  (has been added to the MS)
+  flagcolumn:     FLAG
+  weightcolumn    WEIGHT_SPECTRUM
+  writing:        data flags
+  Compressed:     no
+
+  flush:          0
+Processing 1431 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 709776 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Flags set by OneApplyCal applycal.
+=======================
+
+Percentage of visibilities flagged per baseline (antenna pair):
+ ant    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+   0    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   1    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   2    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   3    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   4    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   5    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   6    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   7    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   8    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+   9    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  10    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  11    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  12    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  13    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  14    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  15    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  16    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  17    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  18    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  19    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  20    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  21    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  22    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  25    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  26    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  27    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  28    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%   0%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%   6%
+
+ ant   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29
+   0    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   1    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   2    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   3    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   4    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   5    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   6    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   7    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   8    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+   9    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  10    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  11    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  12    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  13    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  14    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  15    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  16    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  17    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  18    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  19    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  20    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  21    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  22    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  23  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  24    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  25    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  26    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  27    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  28    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+  29  100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%
+  30    0%   0%   0%   0%   0%   0%   0%   0% 100%   0%   0%   0%   0%   0% 100%
+TOTAL   6%   6%   6%   6%   6%   6%   6%   6% 100%   6%   6%   6%   6%   6% 100%
+
+ ant   30
+   0    0%
+   1    0%
+   2    0%
+   3    0%
+   4    0%
+   5    0%
+   6    0%
+   7    0%
+   8    0%
+   9    0%
+  10    0%
+  11    0%
+  12    0%
+  13    0%
+  14    0%
+  15    0%
+  16    0%
+  17    0%
+  18    0%
+  19    0%
+  20    0%
+  21    0%
+  22    0%
+  23  100%
+  24    0%
+  25    0%
+  26    0%
+  27    0%
+  28    0%
+  29  100%
+  30    0%
+TOTAL   6%
+
+Percentage of visibilities flagged per channel:
+ channels        0
+   0-   0:      12%
+Total flagged:    11.656%   (82732 out of 709776 visibilities)
+
+Total DP3 time        2.1 real        1.89 user        0.09 system
+    8.9% (  187 ms) MsReader
+   16.4% (  344 ms) OneApplyCal applycal.
+   36.7% (  771 ms) ApplyBeam applybeam.
+   28.2% (  593 ms) MSUpdater msout.

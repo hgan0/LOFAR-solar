@@ -1,0 +1,106 @@
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MSReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB060_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:49:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_new_cal2/SB000/CasA_SB060_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.96 real        0.99 user        0.15 system
+   15.6% (  927 ms) MSReader
+   77.8% ( 4632 ms) MSWriter msout.
+     17.8% (  825 ms) Creating task
+     18.8% (  872 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MSReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB000_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:48:00
+  maximum time:       2023/09/21/12:49:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_new_cal2/SB000/Sun_SB000_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.81 real        1.01 user        0.12 system
+   15.2% (  879 ms) MSReader
+   83.3% ( 4834 ms) MSWriter msout.
+     13.9% (  671 ms) Creating task
+     15.4% (  745 ms) Writing (threaded)

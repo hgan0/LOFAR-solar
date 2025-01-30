@@ -1,0 +1,1060 @@
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB060_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB000/CasA_SB060_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.02 real        1.35 user        0.18 system
+   19.9% ( 1000 ms) MsReader
+   79.8% ( 4011 ms) MSWriter msout.
+     18.9% (  759 ms) Creating task
+     23.9% (  960 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB000_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB000/Sun_SB000_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.76 real        1.38 user         0.2 system
+   20.3% (  964 ms) MsReader
+   79.5% ( 3783 ms) MSWriter msout.
+     17.9% (  677 ms) Creating task
+     23.2% (  877 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB061_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB001/CasA_SB061_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.99 real        1.38 user         0.2 system
+   20.0% (  995 ms) MsReader
+   79.8% ( 3978 ms) MSWriter msout.
+     17.5% (  694 ms) Creating task
+     22.7% (  901 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB001_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB001/Sun_SB001_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.73 real        1.27 user        0.17 system
+   19.1% (  902 ms) MsReader
+   80.7% ( 3813 ms) MSWriter msout.
+     17.4% (  664 ms) Creating task
+     21.9% (  834 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB062_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB002/CasA_SB062_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.76 real        1.39 user        0.17 system
+   20.4% (  969 ms) MsReader
+   79.3% ( 3769 ms) MSWriter msout.
+     18.1% (  683 ms) Creating task
+     23.2% (  873 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB002_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB002/Sun_SB002_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.14 real        1.39 user        0.18 system
+   18.4% (  947 ms) MsReader
+   81.3% ( 4181 ms) MSWriter msout.
+     17.5% (  730 ms) Creating task
+     22.2% (  926 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB063_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB003/CasA_SB063_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.98 real        1.36 user        0.17 system
+   19.2% (  956 ms) MsReader
+   80.5% ( 4007 ms) MSWriter msout.
+     19.2% (  767 ms) Creating task
+     23.9% (  959 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB003_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB003/Sun_SB003_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.75 real        1.42 user        0.23 system
+   20.5% (  974 ms) MsReader
+   79.2% ( 3765 ms) MSWriter msout.
+     20.4% (  768 ms) Creating task
+     26.2% (  986 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB064_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB004/CasA_SB064_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.06 real        1.37 user        0.21 system
+   19.6% (  991 ms) MsReader
+   80.2% ( 4056 ms) MSWriter msout.
+     17.7% (  719 ms) Creating task
+     22.5% (  912 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB004_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB004/Sun_SB004_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.37 real        1.38 user        0.18 system
+   18.4% (  987 ms) MsReader
+   81.4% ( 4372 ms) MSWriter msout.
+     16.5% (  723 ms) Creating task
+     20.9% (  913 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB065_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB005/CasA_SB065_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.34 real        1.37 user        0.18 system
+   18.3% (  974 ms) MsReader
+   81.5% ( 4351 ms) MSWriter msout.
+     16.4% (  715 ms) Creating task
+     20.9% (  908 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB005_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB005/Sun_SB005_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.38 real        1.41 user        0.19 system
+   18.3% (  985 ms) MsReader
+   81.4% ( 4382 ms) MSWriter msout.
+     18.5% (  809 ms) Creating task
+     23.4% ( 1026 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB066_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB006/CasA_SB066_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       4.89 real        1.37 user        0.16 system
+   19.7% (  964 ms) MsReader
+   80.0% ( 3910 ms) MSWriter msout.
+     18.1% (  707 ms) Creating task
+     22.9% (  894 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB006_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB006/Sun_SB006_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.15 real         1.4 user        0.19 system
+   19.2% (  991 ms) MsReader
+   80.5% ( 4153 ms) MSWriter msout.
+     19.5% (  811 ms) Creating task
+     24.0% (  998 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB067_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB007/CasA_SB067_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.01 real        1.38 user        0.19 system
+   19.4% (  971 ms) MsReader
+   80.4% ( 4029 ms) MSWriter msout.
+     19.7% (  794 ms) Creating task
+     24.6% (  990 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB007_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB007/Sun_SB007_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.24 real        1.37 user        0.21 system
+   18.4% (  961 ms) MsReader
+   81.4% ( 4262 ms) MSWriter msout.
+     16.7% (  710 ms) Creating task
+     21.7% (  924 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB068_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB008/CasA_SB068_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time        5.1 real        1.46 user        0.16 system
+   19.6% (  996 ms) MsReader
+   79.9% ( 4072 ms) MSWriter msout.
+     19.9% (  808 ms) Creating task
+     24.8% ( 1008 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB008_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB008/Sun_SB008_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time       5.09 real        1.41 user        0.16 system
+   19.4% (  987 ms) MsReader
+   80.4% ( 4091 ms) MSWriter msout.
+     18.1% (  741 ms) Creating task
+     22.9% (  935 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025887_SAP001_SB069_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB009/CasA_SB069_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time        4.9 real        1.43 user        0.21 system
+   20.2% (  986 ms) MsReader
+   79.6% ( 3896 ms) MSWriter msout.
+     19.1% (  744 ms) Creating task
+     24.7% (  963 ms) Writing (threaded)
+===================================================================================
+Warning: you are using DPPP, the deprecated name for DP3, to start the program!
+In March 2021, the main DP3 executable was renamed to 'DP3' to use one consistent
+name. Your parameters are now forwarded to DP3, but this forwarding wrapper will be
+removed in the future: update your commands/scripts and change 'DPPP' to 'DP3'!
+===================================================================================
+ copying info and subtables ...
+Finished preparing output MS
+MsReader
+  input MS:           /net/zernike/scratch3/hgan/data/raw_data/L2025886/L2025886_SAP000_SB009_uv.MS
+  band                0
+  startchan:          0  (0)
+  nchan:              1  (0)
+  ncorrelations:      4
+  nbaselines:         496
+  first time:         2023/09/21/12:56:00
+  maximum time:       2023/09/21/12:57:00
+  ntimes:             358
+  time interval:      0.167772
+  DATA column:        DATA
+  extra data columns: 
+  WEIGHT column:      WEIGHT_SPECTRUM
+  FLAG column:        FLAG
+  autoweight:         false
+MSWriter msout.
+  output MS:      /net/zernike/scratch3/hgan/processed/L2025886_exp2/case2/SB009/Sun_SB009_Cycle0_raw.MS
+  nchan:          1
+  ncorrelations:  4
+  nbaselines:     496
+  ntimes:         358
+  time interval:  0.167772
+  DATA column:    DATA
+  FLAG column:    FLAG
+  WEIGHT column:  WEIGHT_SPECTRUM
+  Compressed:     no
+  use thread:     true
+Processing 358 time slots ...
+
+0%....10....20....30....40....50....60....70....80....90....100%
+Finishing processing ...
+
+NaN/infinite data flagged in reader
+===================================
+
+Percentage of flagged visibilities detected per correlation:
+  [0,0,0,0] out of 177568 visibilities   [0%, 0%, 0%, 0%]
+0 missing time slots were inserted
+
+Total DP3 time          5 real        1.44 user        0.19 system
+   19.4% (  972 ms) MsReader
+   80.3% ( 4018 ms) MSWriter msout.
+     18.7% (  749 ms) Creating task
+     23.9% (  960 ms) Writing (threaded)

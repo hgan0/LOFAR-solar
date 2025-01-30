@@ -1,0 +1,201 @@
+
+========================================================================
+Thu 30-01-2025 09:40:28:: INFO    : Processing quiet_sun_model-MFS-image-pb.fits
+Thu 30-01-2025 09:40:28:: INFO    : PyBDSF version 1.11.1
+Thu 30-01-2025 09:40:28:: INFO    : Non-default input parameters:
+                                        filename             = 'quiet_sun_model-MFS-image-pb.fits'
+Thu 30-01-2025 09:40:29:: USERINFO: --> Opened 'quiet_sun_model-MFS-image-pb.fits'
+Thu 30-01-2025 09:40:29:: INFO    : Original data shape of quiet_sun_model-MFS-image-pb.fits: (1, 1, 2400, 2400)
+Thu 30-01-2025 09:40:29:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 2400, 2400)
+Thu 30-01-2025 09:40:29:: USERINFO: Image size .............................. : (2400, 2400) pixels
+Thu 30-01-2025 09:40:29:: USERINFO: Number of channels ...................... : 1
+Thu 30-01-2025 09:40:29:: USERINFO: Number of Stokes parameters ............. : 1
+Thu 30-01-2025 09:40:29:: USERINFO: Beam shape (major, minor, pos angle) .... : (1.17495e-01, 1.48009e-02, 167.9) degrees
+Thu 30-01-2025 09:40:29:: INFO    : Equinox of image is 2000.000000.
+Thu 30-01-2025 09:40:29:: USERINFO: Frequency of image ...................... : 49.408 MHz
+Thu 30-01-2025 09:40:29:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Thu 30-01-2025 09:40:31:: INFO    : Raw mean (Stokes I) =  -9905.4718 mJy and raw rms =  28481080.0781 mJy 
+Thu 30-01-2025 09:40:31:: INFO    : sigma clipped mean (Stokes I) =  44675.7679 mJy and  sigma clipped rms =  18020429.3510 mJy 
+Thu 30-01-2025 09:40:31:: USERINFO: Flux from sum of (non-blank) pixels ..... : -223418.200 Jy
+Thu 30-01-2025 09:40:31:: INFO    : Estimated bmpersrc_th =   59.79
+Thu 30-01-2025 09:40:31:: INFO    : Parameter confused is False
+Thu 30-01-2025 09:40:31:: USERINFO: --> Calculating background rms and mean images
+Thu 30-01-2025 09:40:31:: INFO    : Estimated size of brightest source (pixels) = 36
+Thu 30-01-2025 09:40:31:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 98
+Thu 30-01-2025 09:40:33:: USERINFO: Derived rms_box (box size, step size) ... : (491, 164) pixels
+Thu 30-01-2025 09:40:33:: INFO    : Background rms and mean images computed
+Thu 30-01-2025 09:40:33:: USERINFO: --> Variation in rms image significant
+Thu 30-01-2025 09:40:33:: USERINFO: --> Using 2D map for background rms
+Thu 30-01-2025 09:40:33:: USERINFO: --> Variation in mean image significant
+Thu 30-01-2025 09:40:33:: USERINFO: --> Using 2D map for background mean
+Thu 30-01-2025 09:40:33:: USERINFO: Min/max values of background rms map .... : (5.95e+03, 9.09e+04) Jy/beam
+Thu 30-01-2025 09:40:33:: USERINFO: Min/max values of background mean map ... : (-3.29e+03, 2.99e+03) Jy/beam
+Thu 30-01-2025 09:40:33:: USERINFO: --> Expected 5-sigma-clipped false detection rate > fdr_ratio
+Thu 30-01-2025 09:40:33:: USERINFO: --> Using FDR (False Detection Rate) thresholding
+Thu 30-01-2025 09:40:39:: USERINFO: FDR threshold (replaces thresh_pix) ..... : 2.3853
+Thu 30-01-2025 09:40:39:: USERINFO: Minimum number of pixels per island ..... : 85
+Thu 30-01-2025 09:40:39:: USERINFO: Number of islands found ................. : 139
+Thu 30-01-2025 09:40:41:: USERINFO: Total number of Gaussians fit to image .. : 6
+Thu 30-01-2025 09:40:41:: USERINFO: Total flux density in model ............. : 4427594.579 Jy
+Thu 30-01-2025 09:40:41:: USERINFO: --> Grouping Gaussians into sources
+Thu 30-01-2025 09:40:41:: USERINFO: Number of sources formed from Gaussians   : 6
+Thu 30-01-2025 09:40:41:: WARNING : All Gaussians were flagged for the following islands:
+                                        Island #0 (x=8, y=604): fit with 1 Gaussian with flag = 256
+                                        Island #1 (x=13, y=624): fit with 1 Gaussian with flag = 256
+                                        Island #2 (x=9, y=641): fit with 1 Gaussian with flag = 318
+                                        Island #3 (x=31, y=554): fit with 1 Gaussian with flag = 256
+                                        Island #4 (x=110, y=266): fit with 1 Gaussian with flag = 256
+                                        Island #5 (x=73, y=1679): fit with 1 Gaussian with flag = 256
+                                        Island #6 (x=108, y=284): fit with 1 Gaussian with flag = 256
+                                        Island #7 (x=74, y=1646): fit with 1 Gaussian with flag = 260
+                                        Island #8 (x=74, y=1663): fit with 1 Gaussian with flag = 256
+                                        Island #9 (x=74, y=1696): fit with 1 Gaussian with flag = 318
+                                        Island #10 (x=75, y=1630): fit with 1 Gaussian with flag = 256
+                                        Island #11 (x=75, y=1712): fit with 1 Gaussian with flag = 256
+                                        Island #12 (x=77, y=1729): fit with 1 Gaussian with flag = 256
+                                        Island #13 (x=79, y=1470): fit with 1 Gaussian with flag = 256
+                                        Island #14 (x=79, y=1420): fit with 1 Gaussian with flag = 256
+                                        Island #15 (x=79, y=1437): fit with 1 Gaussian with flag = 256
+                                        Island #16 (x=79, y=1454): fit with 1 Gaussian with flag = 256
+                                        Island #17 (x=79, y=1745): fit with 1 Gaussian with flag = 256
+                                        Island #18 (x=81, y=1387): fit with 1 Gaussian with flag = 256
+                                        Island #19 (x=80, y=1404): fit with 1 Gaussian with flag = 256
+                                        Island #20 (x=81, y=1762): fit with 1 Gaussian with flag = 256
+                                        Island #21 (x=81, y=1811): fit with 1 Gaussian with flag = 260
+                                        Island #22 (x=81, y=1828): fit with 1 Gaussian with flag = 256
+                                        Island #23 (x=82, y=1370): fit with 1 Gaussian with flag = 256
+                                        Island #24 (x=82, y=1778): fit with 1 Gaussian with flag = 256
+                                        Island #25 (x=82, y=1795): fit with 1 Gaussian with flag = 256
+                                        Island #26 (x=83, y=1844): fit with 1 Gaussian with flag = 276
+                                        Island #27 (x=84, y=1354): fit with 1 Gaussian with flag = 256
+                                        Island #28 (x=89, y=1337): fit with 1 Gaussian with flag = 256
+                                        Island #29 (x=120, y=249): fit with 1 Gaussian with flag = 256
+                                        Island #30 (x=89, y=1320): fit with 1 Gaussian with flag = 256
+                                        Island #31 (x=135, y=233): fit with 1 Gaussian with flag = 256
+                                        Island #32 (x=105, y=2014): fit with 1 Gaussian with flag = 256
+                                        Island #33 (x=168, y=127): fit with 1 Gaussian with flag = 272
+                                        Island #34 (x=112, y=2031): fit with 1 Gaussian with flag = 256
+                                        Island #35 (x=117, y=2048): fit with 1 Gaussian with flag = 256
+                                        Island #36 (x=153, y=217): fit with 1 Gaussian with flag = 256
+                                        Island #37 (x=119, y=1096): fit with 1 Gaussian with flag = 256
+                                        Island #38 (x=122, y=1079): fit with 1 Gaussian with flag = 256
+                                        Island #39 (x=122, y=2065): fit with 1 Gaussian with flag = 256
+                                        Island #40 (x=125, y=1062): fit with 1 Gaussian with flag = 256
+                                        Island #41 (x=125, y=2081): fit with 1 Gaussian with flag = 318
+                                        Island #42 (x=166, y=108): fit with 1 Gaussian with flag = 256
+                                        Island #43 (x=147, y=198): fit with 1 Gaussian with flag = 256
+                                        Island #44 (x=126, y=2097): fit with 1 Gaussian with flag = 276
+                                        Island #45 (x=130, y=2114): fit with 1 Gaussian with flag = 284
+                                        Island #46 (x=127, y=2129): fit with 1 Gaussian with flag = 256
+                                        Island #47 (x=129, y=1046): fit with 1 Gaussian with flag = 284
+                                        Island #48 (x=140, y=2147): fit with 1 Gaussian with flag = 256
+                                        Island #49 (x=133, y=1029): fit with 7 Gaussians with flags = 382, 382, 265, 268, 268, 268, 268
+                                        Island #50 (x=137, y=1012): fit with 1 Gaussian with flag = 260
+                                        Island #51 (x=155, y=181): fit with 1 Gaussian with flag = 256
+                                        Island #52 (x=138, y=1324): fit with 1 Gaussian with flag = 256
+                                        Island #53 (x=140, y=995): fit with 1 Gaussian with flag = 284
+                                        Island #54 (x=148, y=1309): fit with 1 Gaussian with flag = 256
+                                        Island #55 (x=141, y=2163): fit with 1 Gaussian with flag = 256
+                                        Island #56 (x=171, y=146): fit with 1 Gaussian with flag = 256
+                                        Island #57 (x=143, y=978): fit with 1 Gaussian with flag = 318
+                                        Island #58 (x=147, y=961): fit with 1 Gaussian with flag = 284
+                                        Island #59 (x=150, y=944): fit with 1 Gaussian with flag = 318
+                                        Island #60 (x=184, y=166): fit with 1 Gaussian with flag = 256
+                                        Island #61 (x=152, y=2180): fit with 1 Gaussian with flag = 256
+                                        Island #62 (x=154, y=927): fit with 1 Gaussian with flag = 256
+                                        Island #63 (x=159, y=910): fit with 1 Gaussian with flag = 256
+                                        Island #64 (x=162, y=2197): fit with 1 Gaussian with flag = 256
+                                        Island #65 (x=163, y=893): fit with 1 Gaussian with flag = 256
+                                        Island #66 (x=168, y=876): fit with 1 Gaussian with flag = 256
+                                        Island #67 (x=170, y=2214): fit with 1 Gaussian with flag = 256
+                                        Island #68 (x=174, y=2230): fit with 1 Gaussian with flag = 256
+                                        Island #69 (x=175, y=2246): fit with 1 Gaussian with flag = 256
+                                        Island #70 (x=182, y=1330): fit with 1 Gaussian with flag = 256
+                                        Island #71 (x=178, y=1313): fit with 1 Gaussian with flag = 256
+                                        Island #72 (x=194, y=1709): fit with 1 Gaussian with flag = 256
+                                        Island #73 (x=202, y=1876): fit with 1 Gaussian with flag = 256
+                                        Island #74 (x=231, y=1055): fit with 1 Gaussian with flag = 256
+                                        Island #75 (x=223, y=1021): fit with 1 Gaussian with flag = 256
+                                        Island #76 (x=227, y=1005): fit with 1 Gaussian with flag = 256
+                                        Island #77 (x=233, y=650): fit with 1 Gaussian with flag = 256
+                                        Island #78 (x=252, y=598): fit with 1 Gaussian with flag = 256
+                                        Island #79 (x=265, y=564): fit with 1 Gaussian with flag = 256
+                                        Island #80 (x=352, y=348): fit with 1 Gaussian with flag = 256
+                                        Island #81 (x=361, y=330): fit with 1 Gaussian with flag = 256
+                                        Island #82 (x=369, y=313): fit with 1 Gaussian with flag = 256
+                                        Island #83 (x=378, y=296): fit with 1 Gaussian with flag = 256
+                                        Island #84 (x=387, y=279): fit with 1 Gaussian with flag = 256
+                                        Island #85 (x=395, y=262): fit with 1 Gaussian with flag = 256
+                                        Island #86 (x=404, y=245): fit with 1 Gaussian with flag = 256
+                                        Island #87 (x=412, y=228): fit with 1 Gaussian with flag = 256
+                                        Island #88 (x=421, y=210): fit with 1 Gaussian with flag = 256
+                                        Island #89 (x=431, y=193): fit with 1 Gaussian with flag = 256
+                                        Island #90 (x=441, y=176): fit with 1 Gaussian with flag = 256
+                                        Island #91 (x=450, y=158): fit with 1 Gaussian with flag = 256
+                                        Island #92 (x=457, y=141): fit with 1 Gaussian with flag = 256
+                                        Island #93 (x=463, y=123): fit with 1 Gaussian with flag = 256
+                                        Island #94 (x=631, y=25): fit with 1 Gaussian with flag = 256
+                                        Island #95 (x=1166, y=1201): fit with 1 Gaussian with flag = 256
+                                        Island #96 (x=1726, y=2319): fit with 1 Gaussian with flag = 256
+                                        Island #97 (x=1774, y=2205): fit with 1 Gaussian with flag = 256
+                                        Island #98 (x=1782, y=2220): fit with 1 Gaussian with flag = 256
+                                        Island #99 (x=1851, y=2317): fit with 1 Gaussian with flag = 256
+                                        Island #100 (x=1872, y=2144): fit with 5 Gaussians with flags = 256, 382, 381, 271, 256
+                                        Island #101 (x=1875, y=2270): fit with 1 Gaussian with flag = 368
+                                        Island #102 (x=1894, y=2188): fit with 1 Gaussian with flag = 256
+                                        Island #103 (x=1928, y=2237): fit with 1 Gaussian with flag = 256
+                                        Island #104 (x=1938, y=2222): fit with 1 Gaussian with flag = 380
+                                        Island #105 (x=1926, y=2206): fit with 1 Gaussian with flag = 256
+                                        Island #106 (x=2019, y=1813): fit with 1 Gaussian with flag = 256
+                                        Island #107 (x=2043, y=1676): fit with 1 Gaussian with flag = 256
+                                        Island #108 (x=2057, y=1691): fit with 1 Gaussian with flag = 256
+                                        Island #110 (x=2190, y=1265): fit with 1 Gaussian with flag = 256
+                                        Island #112 (x=2201, y=1171): fit with 1 Gaussian with flag = 256
+                                        Island #113 (x=2235, y=1057): fit with 1 Gaussian with flag = 376
+                                        Island #115 (x=2208, y=2217): fit with 1 Gaussian with flag = 256
+                                        Island #116 (x=2218, y=693): fit with 1 Gaussian with flag = 256
+                                        Island #117 (x=2215, y=440): fit with 1 Gaussian with flag = 256
+                                        Island #118 (x=2215, y=2201): fit with 1 Gaussian with flag = 256
+                                        Island #119 (x=2244, y=1483): fit with 1 Gaussian with flag = 256
+                                        Island #120 (x=2248, y=899): fit with 1 Gaussian with flag = 256
+                                        Island #122 (x=2246, y=914): fit with 1 Gaussian with flag = 256
+                                        Island #123 (x=2270, y=1036): fit with 1 Gaussian with flag = 256
+                                        Island #124 (x=2265, y=404): fit with 1 Gaussian with flag = 256
+                                        Island #126 (x=2290, y=658): fit with 1 Gaussian with flag = 256
+                                        Island #127 (x=2296, y=1157): fit with 1 Gaussian with flag = 256
+                                        Island #128 (x=2323, y=1687): fit with 1 Gaussian with flag = 256
+                                        Island #129 (x=2328, y=1016): fit with 1 Gaussian with flag = 256
+                                        Island #130 (x=2326, y=1033): fit with 1 Gaussian with flag = 256
+                                        Island #131 (x=2331, y=1886): fit with 1 Gaussian with flag = 256
+                                        Island #132 (x=2354, y=366): fit with 1 Gaussian with flag = 256
+                                        Island #134 (x=2361, y=718): fit with 2 Gaussians with flags = 256, 312
+                                        Island #135 (x=2363, y=604): fit with 1 Gaussian with flag = 256
+                                        Island #136 (x=2370, y=879): fit with 1 Gaussian with flag = 256
+                                        Island #137 (x=2371, y=895): fit with 1 Gaussian with flag = 256
+                                        Island #138 (x=2395, y=584): fit with 1 Gaussian with flag = 256
+                                    Please check these islands. If they are valid islands and
+                                    should be fit, try adjusting the flagging options (use
+                                    show_fit with "ch0_flagged=True" to see the flagged Gaussians
+                                    and "help 'flagging_opts'" to see the meaning of the flags)
+                                    or enabling the wavelet module (with "atrous_do=True").
+                                    To include empty islands in output source catalogs, set
+                                    incl_empty=True in the write_catalog task.
+Thu 30-01-2025 09:40:41:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Thu 30-01-2025 09:40:42:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: -2.061e+02 (Jy/beam)
+                                        std. dev: 2.845e+04 (Jy/beam)
+                                            skew: 0.053
+                                        kurtosis: 20.411
+Thu 30-01-2025 09:40:42:: INFO    : Internally derived parameters:
+                                        beam                 : (0.117494931224482, 0.0148009360404924, 167.853887271956)
+                                        bmpersrc_th          : 59.7860779398714
+                                        frequency            : 49407958.984375
+                                        indir                : './'
+                                        maxpix_isl           : inf
+                                        minpix_isl           : 85
+                                        outdir               : '/net/zernike/scratch3/hgan/processing/LC20_001/exp1_CasA'
+                                        rms_box              : (491, 164)
+                                        rms_box_bright       : (196, 65)
+                                        thresh               : 'fdr'
+                                        thresh_pix           : 2.385282198817973
+Thu 30-01-2025 09:43:06:: INFO    : Writing quiet_sun_model-MFS-image-pb.pybdsf.srl.fits
