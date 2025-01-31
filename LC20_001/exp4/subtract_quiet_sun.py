@@ -15,8 +15,8 @@ threshold1="1."   # 1.
 timewindow2="600" # 600
 threshold2="1."   # 1.
 
-save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp1/case3/"
-model_dir = "/net/zernike/scratch3/hgan/processing/LC20_001/exp1_CasA/"
+save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp4/case3/"
+model_dir = "/net/zernike/scratch3/hgan/processing/LC20_001/exp4/"
 
 for i in range(len(SB_Sun)):
     save_dir_SB = save_dir + SB_Sun[i] + "/"

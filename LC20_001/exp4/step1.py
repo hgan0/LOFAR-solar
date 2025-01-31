@@ -14,7 +14,7 @@ threshold1="1."   # 1.
 timewindow2="600" # 600
 threshold2="1."   # 1.
 
-save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp1/case3/"
+save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp4/case3/"
 model_dir = "/net/zernike/scratch3/hgan/data/model/"
 
 for i in range(len(SB_Sun)):
@@ -41,7 +41,6 @@ for i in range(len(SB_Sun)):
         " gaincal.sourcedb=" + model_dir + calibrator + ".sourcedb" + \
         " gaincal.parmdb=" + save_dir_SB + calibrator + "_"+SB_Calibrator[i]+"_Cycle0_avg.MS/instrument" + \
         " gaincal.caltype=diagonal" + \
-        " gaincal.blrange=[500,12000]" + \
         " gaincal.propagatesolutions=False" + \
         " gaincal.usebeammodel=true" + \
         " gaincal.solint=1"

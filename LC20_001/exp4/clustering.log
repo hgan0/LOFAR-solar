@@ -1,8 +1,8 @@
-Angular K-means used 2 iterations.
-Cluster 1 (11h52m54.873s 00d48m23.149s): 17 sources, min=1716, max=8853.97, sum=74494.3, max dist=0.0387926 deg
-Cluster 2 (11h52m54.126s 00d25m12.55s): 1 sources, min=7431.71, max=7431.71, sum=7431.71, max dist=0 deg
-Cluster 3 (11h52m52.126s 00d25m12.551s): 1 sources, min=5894.61, max=5894.61, sum=5894.61, max dist=0 deg
-Average max dist: 0.0129309 deg
-Max dist of all : 0.0387926 deg
-Average distance: 0.017079 deg
-Distance RMS    : 0.0206572 deg
+Angular K-means used 3 iterations.
+Cluster 1 (11h52m51.164s 00d48m55.895s): 9 sources, min=2030.7, max=8853.97, sum=44038.3, max dist=0.0208656 deg
+Cluster 2 (11h52m59.045s 00d47m46.309s): 8 sources, min=1716, max=7585.79, sum=30455.9, max dist=0.0129628 deg
+Cluster 3 (11h52m53.126s 00d25m12.551s): 2 sources, min=5894.61, max=7431.71, sum=13326.3, max dist=0.00416655 deg
+Average max dist: 0.012665 deg
+Max dist of all : 0.0208656 deg
+Average distance: 0.00864637 deg
+Distance RMS    : 0.0102454 deg

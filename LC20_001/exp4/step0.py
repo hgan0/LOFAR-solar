@@ -25,7 +25,7 @@ tstop = "21Sep2023/12:35:00" # case3
 
 data_dir = "/net/zernike/scratch3/hgan/data/raw_data/L2025886/" #"/net/zernike/scratch3/hgan/data/raw_data/"
 model_dir = "/net/zernike/scratch3/hgan/data/model/"
-save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp1/case3/"
+save_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp4/case3/"
 
 for i in range(len(SB_Calibrator)):
     save_dir_SB = save_dir + SB_Sun[i] + "/"

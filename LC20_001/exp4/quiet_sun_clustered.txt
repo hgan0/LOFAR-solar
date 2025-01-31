@@ -1,0 +1,248 @@
+skymodel fileformat 1.1
+source {
+  name "s0c17"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m47.46s 00d49m22.563s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 2293.23901367188 0 0 0
+      polynomial { -913.406127929688 }
+    }
+  }
+}
+source {
+  name "s0c10"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m54.794s 00d48m22.561s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 7529.86376953125 0 0 0
+      polynomial { 10055.8896484375 }
+    }
+  }
+}
+source {
+  name "s0c15"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m50.794s 00d49m02.562s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 7046.13916015625 0 0 0
+      polynomial { 3385.88891601562 }
+    }
+  }
+}
+source {
+  name "s0c11"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m54.127s 00d48m32.561s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 6012.376953125 0 0 0
+      polynomial { 7196.52294921875 }
+    }
+  }
+}
+source {
+  name "s0c14"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m51.46s 00d48m52.562s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 2030.70300292969 0 0 0
+      polynomial { 1441.08605957031 }
+    }
+  }
+}
+source {
+  name "s0c12"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m53.461s 00d48m42.561s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 2268.35400390625 0 0 0
+      polynomial { 2029.55700683594 }
+    }
+  }
+}
+source {
+  name "s0c13"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m52.127s 00d48m42.561s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 4308.02587890625 0 0 0
+      polynomial { 3969.06103515625 }
+    }
+  }
+}
+source {
+  name "s0c16"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m49.46s 00d49m12.562s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 3695.67211914062 0 0 0
+      polynomial { 522.75927734375 }
+    }
+  }
+}
+source {
+  name "s0c18"
+  cluster "cluster1"
+  component {
+    type point
+    position 11h52m46.793s 00d49m32.563s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 8853.9658203125 0 0 0
+      polynomial { -6605.85009765625 }
+    }
+  }
+}
+source {
+  name "s0c5"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h52m59.461s 00d47m42.559s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 2526.48999023438 0 0 0
+      polynomial { 5010.51123046875 }
+    }
+  }
+}
+source {
+  name "s0c2"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h53m01.461s 00d47m32.558s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 7585.7890625 0 0 0
+      polynomial { 14430.5 }
+    }
+  }
+}
+source {
+  name "s0c8"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h52m58.128s 00d48m02.559s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 1716.0009765625 0 0 0
+      polynomial { 2596.35693359375 }
+    }
+  }
+}
+source {
+  name "s0c3"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h53m00.795s 00d47m32.558s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 1944.60095214844 0 0 0
+      polynomial { 4093.24291992188 }
+    }
+  }
+}
+source {
+  name "s0c4"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h53m00.795s 00d47m42.558s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 2225.07299804688 0 0 0
+      polynomial { 3808.36499023438 }
+    }
+  }
+}
+source {
+  name "s0c6"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h52m57.461s 00d47m42.56s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 4487.81201171875 0 0 0
+      polynomial { 12298.650390625 }
+    }
+  }
+}
+source {
+  name "s0c7"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h52m58.128s 00d47m52.559s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 5279.18017578125 0 0 0
+      polynomial { 10126.2802734375 }
+    }
+  }
+}
+source {
+  name "s0c9"
+  cluster "cluster2"
+  component {
+    type point
+    position 11h52m56.128s 00d48m02.56s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 4690.966796875 0 0 0
+      polynomial { 8464.9072265625 }
+    }
+  }
+}
+source {
+  name "s0c1"
+  cluster "cluster3"
+  component {
+    type point
+    position 11h52m52.126s 00d25m12.551s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 5894.61083984375 0 0 0
+      polynomial { -4256.17822265625 }
+    }
+  }
+}
+source {
+  name "s0c0"
+  cluster "cluster3"
+  component {
+    type point
+    position 11h52m54.126s 00d25m12.55s
+    sed {
+      frequency 54.0506768526426 MHz
+      fluxdensity Jy 7431.7138671875 0 0 0
+      polynomial { -3196.22900390625 }
+    }
+  }
+}

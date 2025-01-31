@@ -12,7 +12,7 @@ obsvID = "L2025886"
 calibrator = "CasA"
 pointings = ["SAP000", "SAP001"]
 
-data_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp1/case3/"
+data_dir = "/net/zernike/scratch3/hgan/processed/" + obsvID + "_exp4/case3/"
 model_dir = "/net/zernike/scratch3/hgan/data/model/"
 save_dir = data_dir
 
@@ -44,7 +44,7 @@ for i in range(len(SB_Sun)):
     # FITSname1 = save_dir_SB_img + "CasA_Cycle0_raw_"
     # MSname1 = save_dir_SB+"/CasA_"+SB_Calibrator[i]+"_Cycle0_raw.MS"
 
-    FITSname2 = save_dir_SB_img + "CasA_Cycle0_avg_"
+    FITSname2 = save_dir_SB_img + "CasA_Cycle1_avg_"
     MSname2 = save_dir_SB+"/CasA_"+SB_Calibrator[i]+"_Cycle0_avg.MS"
 
     FITSname3 = save_dir_SB_img + "Sun_flare_"
